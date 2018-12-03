@@ -11,17 +11,23 @@ import UIKit
 class ColonyView: UIView {
     
     var colonyItem: ColonyItem?
-    var color = UIColor.blue
+    var colors: [UIColor] = [UIColor.blue, UIColor.red, UIColor.orange, UIColor.gray, UIColor.purple, UIColor.black, UIColor.green]
     var controller: ColonyViewController! = nil
     
-    var cellSize: CGFloat {
-        return frame.height/CGFloat(59)
+    var cellHeight: CGFloat {
+        return frame.height/CGFloat(60)
     }
     
+    var cellWidth: CGFloat {
+        return frame.width/CGFloat(60)
+    }
+    
+    
     func drawCell (_ x: Int, _ y: Int) {
-        let square = CGRect(x: CGFloat(x) * cellSize, y: CGFloat(y) * cellSize,
-                            width: cellSize, height: cellSize).insetBy(dx: cellSize / 10, dy: cellSize / 10)
+        let square = CGRect(x: CGFloat(x) * cellWidth, y: CGFloat(y) * cellHeight,
+                            width: cellWidth, height: cellHeight).insetBy(dx: cellWidth / 10, dy: cellHeight / 10)
         let path = UIBezierPath(rect: square)
+        let color = colors[Int(arc4random()) % colors.count]
         color.setFill()
         path.fill()
     }
@@ -38,13 +44,13 @@ class ColonyView: UIView {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let point: CGPoint = touches.first!.preciseLocation(in: self)
-        controller.firstTouch(Int(floorf(Float(point.x/cellSize))), Int(floorf(Float(point.y/cellSize))))
+        controller.firstTouch(Int(floorf(Float(point.x/cellWidth))), Int(floorf(Float(point.y/cellHeight))))
         setNeedsDisplay()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let point: CGPoint = touches.first!.preciseLocation(in: self)
-        controller.touchMoved(Int(floorf(Float(point.x/cellSize))), Int(floorf(Float(point.y/cellSize))))
+        controller.touchMoved(Int(floorf(Float(point.x/cellWidth))), Int(floorf(Float(point.y/cellHeight))))
         setNeedsDisplay()
     }
     

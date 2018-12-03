@@ -83,25 +83,20 @@ class Colony: CustomStringConvertible {
             }
         }
         cells = temp
-        for i in cells {
-            print (i)
-        }
-        print("\n")
     }
     
     func setBasic () {
-        setCellAlive(x: 0, y: 5)
-        setCellAlive(x: 0, y: 6)
-        setCellAlive(x: 0, y: 7)
+        setCellAlive(x: 5, y: 5)
+        setCellAlive(x: 5, y: 6)
+        setCellAlive(x: 5, y: 7)
     }
     
     func setGlider () {
-        setCellAlive(x: 29, y: 30)
-        setCellAlive(x: 30, y: 30)
-        setCellAlive(x: 31, y: 30)
-        setCellAlive(x: 31, y: 29)
-        setCellAlive(x: 30, y: 28)
-        setCellAlive(x: 0, y: 0)
+        setCellAlive(x: 19, y: 30)
+        setCellAlive(x: 20, y: 30)
+        setCellAlive(x: 21, y: 30)
+        setCellAlive(x: 21, y: 29)
+        setCellAlive(x: 20, y: 28)
     }
     
 }
