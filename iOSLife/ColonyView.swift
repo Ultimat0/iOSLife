@@ -43,18 +43,21 @@ class ColonyView: UIView {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let c = colonyItem else {return}
         let point: CGPoint = touches.first!.preciseLocation(in: self)
         controller.firstTouch(Int(floorf(Float(point.x/cellWidth))), Int(floorf(Float(point.y/cellHeight))))
         setNeedsDisplay()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let c = colonyItem else {return}
         let point: CGPoint = touches.first!.preciseLocation(in: self)
         controller.touchMoved(Int(floorf(Float(point.x/cellWidth))), Int(floorf(Float(point.y/cellHeight))))
         setNeedsDisplay()
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let c = colonyItem else {return}
         controller.touchEnded()
         setNeedsDisplay()
     }
