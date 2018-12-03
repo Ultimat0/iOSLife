@@ -46,8 +46,8 @@
 		CBD4651D21B4871500F1A0E2 /* ColonyDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColonyDetailController.swift; sourceTree = "<group>"; };
 		CBD4651F21B4D18D00F1A0E2 /* ColonyItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColonyItemCell.swift; sourceTree = "<group>"; };
 		CBD4652321B4FD1000F1A0E2 /* ColonyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColonyViewController.swift; sourceTree = "<group>"; };
-		CBD4652921B4FEAC00F1A0E2 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = ../../../Documents/Cell.swift; sourceTree = "<group>"; };
-		CBD4652A21B4FEAC00F1A0E2 /* Colony.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colony.swift; path = ../../../Documents/Colony.swift; sourceTree = "<group>"; };
+		CBD4652921B4FEAC00F1A0E2 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		CBD4652A21B4FEAC00F1A0E2 /* Colony.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colony.swift; path = "/Users/levlvovsky/Downloads/iOSLife-master/iOSLife/Colony.swift"; sourceTree = "<absolute>"; };
 		CBD4652D21B4FF6F00F1A0E2 /* ColonyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColonyView.swift; sourceTree = "<group>"; };
 		D5278E5621A83ED100BCC06A /* iOSLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5278E5921A83ED100BCC06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
